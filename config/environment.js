@@ -2,6 +2,13 @@
 
 module.exports = function(environment) {
   var ENV = {
+		  contentSecurityPolicyHeader: 'Content-Security-Policy',
+		    contentSecurityPolicy: {
+		      // ... other stuff here
+		      'connect-src': "'self' http://localhost:3000 http://localhost:4200"
+		    	  
+		    },
+
     modulePrefix: 'rest-client',
     environment: environment,
     baseURL: '/',

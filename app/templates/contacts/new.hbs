@@ -1,0 +1,10 @@
+{{outlet}}
+<form {{action "submitAction" on="submit" }}>
+{{ input type="text" value=model.first_name placeholder="First Name..." }}
+{{ input type="text" value=model.last_name placeholder="Last Name..." }}
+{{ input type="text" value=model.email placeholder="E-Mail..." }}
+{{ input type="text" value=model.phone placeholder="Phone Number..." }}
+{{input type="submit" value="Submit" class="button"}}
+</form>
+
+<button {{action 'listAction'}}>List Contacts</button>

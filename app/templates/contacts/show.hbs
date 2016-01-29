@@ -1,0 +1,7 @@
+<label>{{model.first_name}} {{model.last_name}}</label><br />
+<label>{{model.email}}</label><br />
+<label>{{model.phone}}</label><br />
+
+<button {{action 'editAction' model.id}}> Edit Contact </button> | 
+<button {{action 'deleteAction' model.id}}> Delete Contact </button> | 
+<button {{action 'listAction'}}> List Contacts </button>

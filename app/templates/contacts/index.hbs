@@ -1,0 +1,9 @@
+<ul>
+{{#each model as |contact|}}
+<li>
+<label>{{#link-to 'contacts.show' contact.id }} {{contact.first_name}} {{contact.last_name}}{{/link-to}}</label><br />
+<label>{{contact.email}}</label><br />
+<label>{{contact.phone}}</label></li>
+{{/each}}
+</ul>
+<button {{action 'newAction'}}>New contact</button>
